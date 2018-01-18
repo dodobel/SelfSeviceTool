@@ -1,0 +1,32 @@
+[
+{
+  "name":"Query A",
+  "description":"This is for selling",
+  "exp_traffic":"25M",
+  "status":"Requested"
+},
+{
+  "name":"Query B",
+  "description":"Storing user input",
+  "exp_traffic":"25M",
+  "status":"Denied"
+},
+{
+  "name":"Query C",
+  "description":"This is for selling",
+  "exp_traffic":"25M",
+  "status":"On hold"
+},
+{
+  "name":"Query D",
+  "description":"Storing user input",
+  "exp_traffic":"25M",
+  "status":"Approved for production"
+},
+{
+  "name":"Query E",
+  "description":"This is for selling",
+  "exp_traffic":"25M",
+  "status":"Requested"
+}
+]
