@@ -1,4 +1,9 @@
 <template>
+<q-card class="formcard">
+  <q-card-title class="card-title bg-teal text-white">
+  manage you query
+  </q-card-title>
+  <q-card-main class="cotent row">
   <div class="form">
   	<div v-if="this.name === 'queryAdd' && this.org.length===0">
   	  <q-input v-model="orgInfo.name" inverted color="brown-3" stack-label="Orgnazation" />
@@ -11,21 +16,26 @@
     <q-input type="textarea" inverted color="brown-3" v-model="queryDetail.description" stack-label="Usecase" />
     <q-input inverted color="brown-3" v-model="queryDetail.exp_traffic" stack-label="Expected Traffic" />
     <q-select inverted color="brown-3" :options="selectOptions" v-model="queryDetail.datasource" stack-label="Data Source" />
-    <p class="caption">Input Fileds</p>
-    <q-option-group v-model="queryDetail.inputfileds" type="checkbox" :options="inputFileds" />
-    <p class="caption">Output Fileds</p>
-    <q-option-group v-model="queryDetail.outputfileds" type="checkbox" :options="outputFileds" />    
+    <div class="row">
+    <p class="caption col-6" style="margin-top: 30px;">Input Fileds</p>
+    <p class="caption col-6">Output Fileds</p>
+    <q-option-group v-model="queryDetail.inputfileds" class="col-6" type="checkbox" :options="inputFileds" />
+    
+    <q-option-group v-model="queryDetail.outputfileds" class="col-6" type="checkbox" :options="outputFileds" />
+    </div>    
     <q-btn color="primary" style="float: right;margin-left: 5px;width: 65px" @click="cancel">Cancel</q-btn>
     <q-btn color="primary" style="float: right" @click="submit">Save</q-btn>
   </div>
+  </q-card-main>
+</q-card>
 </template>
 <script>
   import axios from 'axios'
-  import { QInput, QBtn, QSelect, QOptionGroup } from 'quasar'
+  import { QCard, QCardTitle, QCardMain, QInput, QBtn, QSelect, QOptionGroup } from 'quasar'
   export default {
     props: ['name', 'query', 'org'],
     components: {
-      QInput, QBtn, QSelect, QOptionGroup
+      QCard, QCardTitle, QCardMain, QInput, QBtn, QSelect, QOptionGroup
     },
     created () {
       console.log(this.query)
@@ -144,8 +154,12 @@
   }
 </script>
 <style>
+  .formcard {
+  	margin-left: 200px;
+  	margin-right: 200px;
+  }
   .form {
   	width: 600px;
-  	margin-left: 260px;
+  	margin-left: 140px;
   }
 </style>
