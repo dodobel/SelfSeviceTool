@@ -1,0 +1,50 @@
+{
+  "organizations": [
+    {
+      "name": "A",
+      "contactinfo": "123",
+      "accesslist": "A",
+      "data": [],
+      "id": 1
+    },
+    {
+      "name": "B",
+      "contactinfo": "123",
+      "accesslist": "A",
+      "data": [],
+      "id": 2
+    }
+  ],
+  "queries": [
+    {
+      "name": "a",
+      "description": "test",
+      "exp_traffic": "20M",
+      "status": "On Hold",
+      "inputfileds": [
+        "selected"
+      ],
+      "outputfileds": [
+        "selected"
+      ],
+      "datasource": "Local Team Data",
+      "org_name": "A",
+      "id": 1
+    },
+    {
+      "name": "B",
+      "description": "test",
+      "exp_traffic": "50M",
+      "status": "On Hold",
+      "inputfileds": [
+        "indeterminate"
+      ],
+      "outputfileds": [
+        "indeterminate"
+      ],
+      "datasource": "IP Address Data",
+      "org_name": "B",
+      "id": 2
+    }
+  ]
+}

@@ -50,6 +50,20 @@
 </script>
 
 <style>
+  .modal-content {
+    height: 600px !important;
+    width: 600px !important;
+  }
+  .modal.minimized .modal-content {
+    max-height: 60vh;
+  }
+  .modal-scroll {
+    max-height: 700px;
+  }
+  h6 {
+    font-size: 12px;
+    font-weight: 400;
+  }
   .fade-enter-active, .fade-enter{
     -webkit-animation: moveFromRight .5s both ease;
     animation: moveFromRight .5s both ease;

@@ -28,6 +28,8 @@ export default new VueRouter({
     { path: '/', component: load('views/Homepage/Dashboard'), meta: { name: 'Dashboard' } },
     { path: '/dashboard', component: load('views/Homepage/Dashboard'), meta: { name: 'Dashboard' } },
     { path: '/lbs/management', component: load('views/LBS/QueryManagement'), meta: { name: 'Query Manage' } },
+    { path: '/lbs/management/edit/:id', component: load('views/LBS/QueryEdit'), meta: { name: 'Query Edit' } },
+    { path: '/lbs/management/add', component: load('views/LBS/QueryAdd'), meta: { name: 'Query Add' } },
     { path: '/lbs/guide', component: load('views/LBS/Guide'), meta: { name: 'LBS Develop Guide' } },
     { path: '/gps/management', component: load('views/GPS/AttrManagement'), meta: { name: 'Attribute Manage' } },
     { path: '/gps/guide', component: load('views/GPS/Guide'), meta: { name: 'GPS Develop Guide' } },

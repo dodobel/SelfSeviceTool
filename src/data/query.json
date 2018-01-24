@@ -1,32 +1,53 @@
-[
-{
-  "name":"Query A",
-  "description":"This is for selling",
-  "exp_traffic":"25M",
-  "status":"Requested"
-},
-{
-  "name":"Query B",
-  "description":"Storing user input",
-  "exp_traffic":"25M",
-  "status":"Denied"
-},
-{
-  "name":"Query C",
-  "description":"This is for selling",
-  "exp_traffic":"25M",
-  "status":"On hold"
-},
-{
-  "name":"Query D",
-  "description":"Storing user input",
-  "exp_traffic":"25M",
-  "status":"Approved for production"
-},
-{
-  "name":"Query E",
-  "description":"This is for selling",
-  "exp_traffic":"25M",
-  "status":"Requested"
-}
-]
+{ 
+  "owner":"A",
+  "organization":"selling",
+  "contactinfo":"123@gmail.com",
+  "accesslist":["A","B","C"],
+  "query":[
+    {
+    "name":"Query A",
+    "description":"This is for selling",
+    "exp_traffic":"25M",
+    "status":"Requested",
+    "inputfileds":"not selected",
+    "outputfileds":"selected",
+    "datasource":"Postal Code Data"
+    },
+    {
+    "name":"Query B",
+    "description":"Storing user input",
+    "exp_traffic":"25M",
+    "status":"Denied",
+    "inputfileds":"selected",
+    "outputfileds":"selected",
+    "datasource":"Local Team Data"
+    },
+    {
+    "name":"Query C",
+    "description":"This is for selling",
+    "exp_traffic":"25M",
+    "status":"On hold",
+    "inputfileds":"selected",
+    "outputfileds":"selected",
+    "datasource":"Local Team Data"
+    },
+    {
+    "name":"Query D",
+    "description":"Storing user input",
+    "exp_traffic":"25M",
+    "status":"Approved for production",
+    "inputfileds":"selected",
+    "outputfileds":"selected",
+    "datasource":"IP Address Data"
+    },
+    {
+    "name":"Query E",
+    "description":"This is for selling",
+    "exp_traffic":"25M",
+    "status":"Requested",
+    "inputfileds":"selected",
+    "outputfileds":"selected",
+    "datasource":"Local Team Data"
+    }
+  ]
+} 
